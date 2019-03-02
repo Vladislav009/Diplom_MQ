@@ -1,0 +1,164 @@
+@font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans-Bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans-Regular.woff');
+    font-weight: normal;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #fff;
+    font-family: OpenSans;
+    font-size: 24px;
+}
+
+header {
+    background: linear-gradient(rgba(10, 14, 52, .9),
+    rgba(10, 14, 52, .9)),
+    url("../img/football_1920.jpg") center no-repeat rgba(10, 14, 52, .9);
+    background-size: cover;
+    height: 100vh;
+}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+    header {
+        background: linear-gradient(rgba(10, 14, 52, .9),
+        rgba(10, 14, 52, .9)),
+        url("../img/football_1280.jpg") center no-repeat rgba(10, 14, 52, .9);
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        background: linear-gradient(rgba(10, 14, 52, .9),
+        rgba(10, 14, 52, .9)),
+        url("../img/football_767.jpg") center no-repeat rgba(10, 14, 52, .9);
+    }
+}
+
+.top-line {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+
+.logo img {
+    width: 191px;
+}
+
+.text {
+    padding: 0 90px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: flex-end;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: 4.5px;
+}
+
+
+
+.text-up {
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+}
+
+.text-down {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-end;
+}
+
+.bottom-btn {
+    display: flex;
+    flex-basis: 100%;
+    margin-bottom: 110px;
+    justify-content: center;
+}
+
+.apple-btn,
+.android-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 311px;
+    height: 77px;
+    text-align: left;
+    font-family: OpenSans, sans-serif;
+    border-radius: 40px;
+    background-color: #5e42b0;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: #fff;
+    border: none;
+}
+
+.apple-btn:hover,
+.android-btn:hover {
+    cursor: pointer;
+}
+
+.apple-btn {
+    background-image: url("../svg/apple_logo_black.svg");
+    background-position: 45px center;
+    background-repeat: no-repeat;
+    background-size: 42px 48px;
+}
+
+.android-btn {
+    margin-left: 50px;
+    background-image: url("../svg/google-play.svg");
+    background-position: 45px center;
+    background-repeat: no-repeat;
+    background-size: 42px 48px;
+}
+
+.btn-text {
+    padding-left: 25px;
+}
+
+.btn-text_bolded {
+    font-weight: bold;
+}
+
+/*@media (max-width: 960px) {*/
+    /*.text {*/
+        /*font-size: 64px;*/
+    /*}*/
+
+    /*.text-down {*/
+        /*flex-basis: 86%;*/
+    /*}*/
+
+    /*.android-btn{*/
+        /*margin-left: 30px;*/
+    /*}*/
+/*}*/
